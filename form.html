@@ -41,6 +41,14 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- END: Custom CSS-->
+    <style media="screen">
+      .form-control{
+        height: 28px;
+      }
+      textarea.form-control {
+          height: 60px;
+      }
+    </style>
 
 </head>
 <!-- END: Head-->
@@ -290,7 +298,7 @@
     <div class="app-content content">
         <div class="content-header row">
         </div>
-        <div class="content-wrapper">
+        <div class="content-wrapper" style="padding: 0.2rem;">
             <div class="content-body">
 					<div class="card">
 								<div class="card-header" style="padding-bottom: 0px;">
@@ -308,19 +316,18 @@
 								  </div>
 								  <div class="col">
 									<div class="button-group">
-                                         <button type="button"style="margin-bottom: 0px !important" class="btn btn-info round btn-min-width mr-1 mb-1">add</button>
-                                         <button type="button" style="margin-bottom: 0px !important"  class="btn btn-info round btn-min-width mr-1 mb-1">cancel</button>
+                                         <button type="button"style="margin-bottom: 0px !important" class="btn btn-info round btn-min-width mr-1 mb-1 btn-sm">add</button>
+                                         <button type="button" style="margin-bottom: 0px !important"  class="btn btn-info round btn-min-width mr-1 mb-1 btn-sm">cancel</button>
                                     </div>
 									</div>
 									<div class="col">
 									<div class="button-group float-right">
-										 <button type="button" style="margin-bottom: 0px !important" class="btn btn-info round btn-min-width mr-1 mb-1" >Tools</button>
+										 <button type="button" style="margin-bottom: 0px !important" class="btn btn-info round btn-min-width mr-1 mb-1 btn-sm" >Tools</button>
 								    </div>
 									</div>
 								   </div>
 
-									<hr>
-									<h4 class="form-section"><i class="ft-clipboard"></i> Sales Order </h4><hr>
+									<h6 class="form-section" style="border-top:1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-top:5px;padding:5px;"><i class="ft-clipboard"></i> Sales Order </h6>
 										<div class="row">
                                             <div class="col-md-6">
                                               <div class="form-body">
@@ -337,7 +344,7 @@
                                                     <div class="input-group">
 														<input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon4">
 														<div class="input-group-append">
-															<span class="input-group-text" id="basic-addon4"><i class="la la-search"></i></span>
+															<span class="input-group-text" style="    padding: 0.3rem 1rem;" id="basic-addon4"><i class="la la-search"></i></span>
 														</div>
 													</div>
                                                    </div>
@@ -379,7 +386,7 @@
                                                     <div class="col-md-4">
                                                         <div class="position-relative has-icon-left">
                                                             <input type="date" id="timesheetinput3" class="form-control" name="date">
-                                                            <div class="form-control-position">
+                                                            <div class="form-control-position" style="    top: -5px;">
                                                                 <i class="ft-message-square"></i>
                                                             </div>
                                                         </div>
@@ -430,8 +437,8 @@
 										     </div>
                                            </div>
                                        </div>
-									  <hr>
-									   <h4 class="form-section"><i class="ft-clipboard"></i> Values </h4><hr>
+
+									   <h6 class="form-section" style="border-top:1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-top:5px;padding:5px;"><i class="ft-clipboard"></i> Values </h6>
 										<div class="row">
 
                                                 <div class="col-md-2">
@@ -477,8 +484,7 @@
                                                         </div>
                                                     </div>
 											    </div>
-											 <hr>
-											<h4 class="form-section"><i class="ft-clipboard"></i> Information </h4><hr>
+											<h6 class="form-section" style="border-top:1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-top:5px;padding:5px;"><i class="ft-clipboard"></i> Information </h6>
 											<div class="row">
 
                                                 <div class="col-md-3">
@@ -536,7 +542,7 @@
                                                             <label for="projectinput1">Doc Status</label>
                                                             <div class="form-inline">
                                                               <input type="text" id="projectinput1" class="form-control" disabled placeholder="Doc Status" name="fname">
-                                                              <button type="button" class="btn btn-warning pull-left ml-1  "> DETAIL </button>
+                                                              <button type="button" class="btn btn-warning pull-left ml-1  btn-sm"> DETAIL </button>
                                                             </div>
 
                                                         </div>
